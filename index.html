@@ -1,36 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article preview component</title>
+    <link rel="stylesheet" href="./main/output.css" />
+  </head>
+  <body class="h-screen bg-LightGrayishBlue flex items-center justify-center">
+    <div
+      class="relative max-w-xs h-xl mx-auto bg-white rounded-lg overflow-hidden grid grid-cols-1 items-center gap-y-6 shadow-lg shadow-GrayishBlue lg:grid lg:grid-cols-[1fr_2fr] lg:max-h-72 lg:max-w-2xl lg:gap-y-0 lg:gap-x-6"
+    >
+      <div class="w-full lg:w-xl lg:h-full">
+        <img src="./images/drawers.jpg" class="lg:h-full" alt="" />
+      </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+      <div class="flex flex-col gap-4 mb-5 px-5 max-w-[90%] lg:py-4">
+        <h1
+          class="text-VeryDarkGrayishBlue text-md font-bold text-left text-xl"
+        >
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="text-xs text-GrayishBlue">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt=""
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="flex flex-col">
+              <h1 class="text-[14px] text-DesaturatedDarkBlue font-bold">
+                Michelle Appleton
+              </h1>
+              <p class="text-GrayishBlue text-[10px]">28 Jun 2020</p>
+            </div>
+          </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <div
+            class="w-7 h-7 flex items-center justify-center rounded-full bg-LightGrayishBlue cursor-pointer"
+          >
+            <img src="./images/icon-share.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full h-[12%] absolute bottom-0 left-0 righ-0 bg-VeryDarkGrayishBlue flex justify-around items-center cursor-pointer lg:hidden"
+      >
+        <div class="flex gap-2 items-center">
+          <h1 class="text-sm text-GrayishBlue tracking-oneRem opacity-[75%]">
+            SHARE
+          </h1>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="flex items-center gap-4">
+            <a href="#">
+              <img
+                src="images/icon-facebook.svg"
+                alt="facebook icons"
+                class="w-5 h-5"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="images/icon-twitter.svg"
+                alt="facebook icons"
+                class="w-5 h-5"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="images/icon-pinterest.svg"
+                alt="facebook icons"
+                class="w-5 h-5"
+              />
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-7 h-7 flex items-center justify-center rounded-full bg-LightGrayishBlue cursor-pointer"
+        >
+          <img src="./images/icon-share.svg" class="text-white" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
