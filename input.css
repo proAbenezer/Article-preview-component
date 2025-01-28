@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#social-links {
+  transition: all 0.7s;
+}
+.display__socialLinks {
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  #afterElement::before {
+    content: "";
+    position: absolute;
+    border-right: 14px solid transparent;
+    border-left: 14px solid transparent;
+    border-top: 18px solid hsl(217, 19%, 35%);
+  }
+}
