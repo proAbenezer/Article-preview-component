@@ -566,14 +566,6 @@ video {
   bottom: -60%;
 }
 
-.-top-\[110\%\] {
-  top: -110%;
-}
-
-.right-\[12\%\] {
-  right: 12%;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -823,9 +815,12 @@ video {
 }
 
 @media (min-width: 1024px) {
-  #afterElement::before {
+  #social-links::before {
     content: "";
     position: absolute;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
     border-right: 14px solid transparent;
     border-left: 14px solid transparent;
     border-top: 18px solid hsl(217, 19%, 35%);
@@ -843,8 +838,8 @@ video {
     top: -140%;
   }
 
-  .lg\:right-\[-15\%\] {
-    right: -15%;
+  .lg\:right-\[-17\%\] {
+    right: -17%;
   }
 
   .lg\:top-\[-160\%\] {

@@ -10,9 +10,13 @@
 }
 
 @media (min-width: 1024px) {
-  #afterElement::before {
+  #social-links::before {
     content: "";
     position: absolute;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+
     border-right: 14px solid transparent;
     border-left: 14px solid transparent;
     border-top: 18px solid hsl(217, 19%, 35%);
